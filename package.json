@@ -27,17 +27,17 @@
     "minimist": "^1.2.8",
     "morgan": "^1.10.0"
   },
-"directories": {
-  "doc": "docs",
-  "example": "examples",
-  "lib": "lib"
-},
-"repository": {
-  "type": "git",
-  "url": "git+https://github.com/comp426-2023-spring/e02-calliexhy.git"
-},
-"bugs": {
-  "url": "https://github.com/comp426-2023-spring/e02-calliexhy/issues"
-},
-"homepage": "https://github.com/comp426-2023-spring/e02-calliexhy#readme"
+  "directories": {
+    "doc": "docs",
+    "example": "examples",
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2023-spring/e02-calliexhy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/comp426-2023-spring/e02-calliexhy/issues"
+  },
+  "homepage": "https://github.com/comp426-2023-spring/e02-calliexhy#readme"
 }
