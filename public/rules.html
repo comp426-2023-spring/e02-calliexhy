@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>RULES:</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #F5F5F5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            margin-top: 20px;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 24px;
+            margin: 40px 0 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.4;
+        }
+
+        button.function {
+            background-color: #333;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+        }
+
+        button.function:hover {
+            background-color: #555;
+        }
+    </style>
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>RULES</h1>
+    </header>
+    <div class="container">
+        <h2>Rock Paper Scissors</h2>
+        <p> Scissors CUTS Paper<br>Paper COVERS Rock<br>Rock CRUSHES Scissors</p>
+        <br>
+        <h2>Rock Paper Scissors Lizard Spock</h2>
+        <p>Scissors CUTS Paper<br>Paper COVERS Rock<br>Rock SMOOSHES Lizard<br>Lizard POISONS Spock<br>Spock
+            SMASHES Scissors <br>Scissors DECAPITATES Lizard <br>Lizard EATS Paper <br>Paper DISPROVES Spock <br>
+            Spock VAPORIZES Rock <br>Rock CRUSHES Scissors <br></p>
+
+        <button type="button" class="function" onclick="home()">Home</button>
+    </div>
+</body>
+
+</html>
