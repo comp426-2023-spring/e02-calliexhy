@@ -7,6 +7,7 @@ async function playRPSAlone() {
         })
             .then(function(result) {
                 console.log(result);
+
                 document.getElementById("rpsplayerdiv").className = "active";
                 document.getElementById("rpsopponentdiv").className = "inactive";
                 document.getElementById("rpsresultdiv").className = "inactive";
@@ -14,6 +15,8 @@ async function playRPSAlone() {
                 document.getElementById("rpsplayer").innerHTML = result.player;
                 })
 };
+
+
 
 const rps = document.getElementById("rpsform");
 rps.addEventListener("submit", playRPS);
@@ -32,16 +35,20 @@ async function playRPS(event) {
           document.getElementById("rpsopponentdiv").className = "active";
           document.getElementById("rpsresultdiv").className = "active";
           document.getElementById("rpsresetbuttondiv").className = "active";
+
+
           document.getElementById("rpsplayer").innerHTML = result.player;
           document.getElementById("rpsopponent").innerHTML = result.opponent;
           document.getElementById("rpsresult").innerHTML = result.result;
         })
 };
 
+
 const resetrps = document.getElementById("resetrps");
 resetrps.addEventListener("click", resetRPS);
 async function resetRPS() {
   console.log("Reset");
+
   document.getElementById("rpsplayerdiv").className = "inactive";
   document.getElementById("rpsopponentdiv").className = "inactive";
   document.getElementById("rpsresultdiv").className = "inactive";
@@ -57,6 +64,7 @@ async function playRPSLSAlone() {
         })
             .then(function(result) {
                 console.log(result);
+
                 document.getElementById("rpslsplayerdiv").className = "active";
                 document.getElementById("rpslsopponentdiv").className = "inactive";
                 document.getElementById("rpslsresultdiv").className = "inactive";
@@ -65,30 +73,39 @@ async function playRPSLSAlone() {
                   })
 };
 
+
+
 function homeNav() {
   document.getElementById("hometab").className = "active";
   document.getElementById("home").className = "active";
+
   document.getElementById("rpstab").className = "";
   document.getElementById("rps").className = "inactive";
+
   document.getElementById("rpslstab").className = "";
   document.getElementById("rpsls").className = "inactive";
 }
 function rpsNav() {
   document.getElementById("hometab").className = "";
   document.getElementById("home").className = "inactive";
+
   document.getElementById("rpstab").className = "active";
   document.getElementById("rps").className = "active";
+
   document.getElementById("rpslstab").className = "";
   document.getElementById("rpsls").className = "inactive";
 }
 function rpslsNav() {
   document.getElementById("hometab").className = "";
   document.getElementById("home").className = "inactive";
+
   document.getElementById("rpstab").className = "";
   document.getElementById("rps").className = "inactive";
+
   document.getElementById("rpslstab").className = "active";
   document.getElementById("rpsls").className = "active";
 }
+
 
 
 const rpsls = document.getElementById("rpslsform");
@@ -104,6 +121,7 @@ async function playRPSLS(event) {
       })
         .then(function(result) {
           console.log(result);
+
           document.getElementById("rpslsplayerdiv").className = "active";
           document.getElementById("rpslsopponentdiv").className = "active";
           document.getElementById("rpslsresultdiv").className = "active";
@@ -114,10 +132,13 @@ async function playRPSLS(event) {
   })
 };
 
+
+
 const resetrpsls = document.getElementById("resetrpsls");
 resetrpsls.addEventListener("click", resetRPSLS);
 
 async function resetRPSLS() {
+  
   document.getElementById("rpslsplayerdiv").className = "inactive";
   document.getElementById("rpslsopponentdiv").className = "inactive";
   document.getElementById("rpslsresultdiv").className = "inactive";
