@@ -1,21 +1,66 @@
-body {
+button.active {
+  background: lightpink;
+  color: #f2f2f2;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
 }
 
-h1 {
+button {
+  background: #9d4edd;
+  color: #f2f2f2;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
 
-p {
-}
-
-.rounded-button {
-    border-radius: 25px;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+ div.active {
+    display: block;
+    text-align: center;
   }
-  
-.rounded-button:hover {
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+ div.inactive {
+    display: none;
+  }
+ 
+  /* Set the background color */
+body {
+  background-color: #F1E9DB;
 }
-  
+
+/* Set the font color */
+body {
+  color: #232020;
+}
+
+/* Set the heading style */
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+   
+
+button:hover {
+  background-color: lightpink;
+  color: #F1E9DB;
+}
+ 
+
+.container {
+  text-align: center;
+}
+
+.rock,
+.paper,
+.scissors {
+  display: inline-block;
+  margin: 0 10px;
+}

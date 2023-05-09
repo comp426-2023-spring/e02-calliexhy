@@ -1,21 +1,139 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-    <title>Rock</title>
-    <!-- Link to your script file(s) and CSS in here somewhere -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RPS/RPSLS App</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <button class="rounded-button play-button">Play</button>
-    <button class="rounded-button start-over-button">Start Over</button>
+    <nav>
+        <button type="submit" id="hometab" onclick="homeNav()" class="active">Home</button>
+        <button type="submit" id="rpstab" onclick="rpsNav()">Rock, Paper, Scissors</button>
+        <button type="submit" id="rpslstab" onclick="rpslsNav()">Rock, Paper, Scissors, Lizard, Spock</button>
+    </nav>
+
+    <div id="home" class="active">
+        <h1>Welcome!</h1>
+        <h1>Don't know what you're doing? Read the rules <a href="rules.html">here</a>.</h1>
+        <h1>After reading the rules, click on one of the above buttons to start playing. </h1>
 
 
-    <!-- Your interface markup goes here -->
-    <!-- For interface examples, look in the `/examples/` directory in the root of your starter code repo. -->
+        <div class="container">
+            <div class="rock">
+                <img src="./img/rock.jpg" alt="rock">
+            </div>
+            <div class="paper">
+                <img src="./img/paper.jpg" alt="paper">
+            </div>
+            <div class="scissors">
+                <img src="./img/scissors.jpg" alt="scissors">
+            </div>
+        </div>
 
+
+
+    </div>
+
+
+
+    <div id="rps" class="inactive">
+        <h1>You chose: ROCK, PAPER, SCISSORS<br><br></h1>
+        <form id="rpsform">
+            <label>
+                <strong>Choose your shot!</strong>
+            </label>
+            <div>
+                <input type="radio" name="shot" value="rock" id="rock">
+                <label for="rock">Rock</label>
+            </div>
+            <div>
+                <input type="radio" name="shot" value="paper" id="paper">
+                <label for="paper">Paper</label>
+            </div>
+            <div>
+                <input type="radio" name="shot" value="scissors" id="scissors">
+                <label for="scissors">Scissors <br><br></label>
+            </div>
+            <button type="submit" value="Shoot">Shoot </button>
+        </form>
+
+
+        <strong><br><br><br><br>Playing alone?<br> Go ahead and just click Shoot!<br><br></strong>
+        <button type="submit" id="rpsalone">Shoot</button>
+        <div id="rpsplayerdiv" class="inactive">
+            <h2>You Chose:</h2>
+            <p><span id="rpsplayer"></span></p>
+        </div>
+        <div id="rpsopponentdiv" class="inactive">
+            <h2>Computer Chose:</h2>
+            <p><span id="rpsopponent"></span></p>
+        </div>
+        <div id="rpsresultdiv" class="inactive">
+            <h2>Result:</h2>
+            <p><span id="rpsresult"></span></p>
+        </div>
+        <div id="rpsresetbuttondiv" class="inactive">
+            <button type="submit" id="resetrps">RESET</button>
+        </div>
+    </div>
+
+    <div id="rpsls" class="inactive">
+        <h1>You chose: ROCK, PAPER, SCISSORS, LIZARD, SPOCK<br><br></h1>
+        <form id="rpslsform">
+            <label>
+                <strong>Choose your shot!</strong>
+            </label>
+            <div>
+                <input type="radio" name="shot" value="rock" id="rock">
+                <label for="rock">Rock</label>
+            </div>
+            <div>
+                <input type="radio" name="shot" value="paper" id="paper">
+                <label for="paper">Paper</label>
+            </div>
+            <div>
+                <input type="radio" name="shot" value="scissors" id="scissors">
+                <label for="scissors">Scissors</label>
+            </div>
+            <div>
+                <input type="radio" name="shot" value="lizard" id="lizard">
+                <label for="lizard">Lizard</label>
+            </div>
+            <div>
+                <input type="radio" name="shot" value="spock" id="spock">
+                <label for="spock">Spock<br><br></label>
+            </div>
+            <button type="submit" value="Shoot">Shoot</button>
+        </form>
+
+
+        <strong><br><br><br><br>Playing alone?<br> Go ahead and just click Shoot!<br><br></strong>
+        <button type="submit" id="rpslsalone">Shoot</button>
+
+
+        <div id="rpslsplayerdiv" class="inactive">
+            <h2>You Chose:</h2>
+            <p><span id="rpslsplayer"></span></p>
+        </div>
+        <div id="rpslsopponentdiv" class="inactive">
+            <h2>Computer Chose:</h2>
+            <p><span id="rpslsopponent"></span></p>
+        </div>
+        <div id="rpslsresultdiv" class="inactive">
+            <h2>Result:</h2>
+            <p><span id="rpslsresult"></span></p>
+        </div>
+        <div id="rpslsresetbuttondiv" class="inactive">
+            <button type="submit" id="resetrpsls">RESET</button>
+        </div>
+    </div>
+
+    <script src="./scripts.js"></script>
 </body>
 
 </html>
