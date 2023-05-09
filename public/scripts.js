@@ -65,6 +65,32 @@ async function playRPSLSAlone() {
                   })
 };
 
+function homeNav() {
+  document.getElementById("hometab").className = "active";
+  document.getElementById("home").className = "active";
+  document.getElementById("rpstab").className = "";
+  document.getElementById("rps").className = "inactive";
+  document.getElementById("rpslstab").className = "";
+  document.getElementById("rpsls").className = "inactive";
+}
+function rpsNav() {
+  document.getElementById("hometab").className = "";
+  document.getElementById("home").className = "inactive";
+  document.getElementById("rpstab").className = "active";
+  document.getElementById("rps").className = "active";
+  document.getElementById("rpslstab").className = "";
+  document.getElementById("rpsls").className = "inactive";
+}
+function rpslsNav() {
+  document.getElementById("hometab").className = "";
+  document.getElementById("home").className = "inactive";
+  document.getElementById("rpstab").className = "";
+  document.getElementById("rps").className = "inactive";
+  document.getElementById("rpslstab").className = "active";
+  document.getElementById("rpsls").className = "active";
+}
+
+
 const rpsls = document.getElementById("rpslsform");
 rpsls.addEventListener("submit", playRPSLS);
 async function playRPSLS(event) {
@@ -99,27 +125,3 @@ async function resetRPSLS() {
 }
 
 
-function homeNav() {
-  document.getElementById("hometab").className = "active";
-  document.getElementById("home").className = "active";
-  document.getElementById("rpstab").className = "";
-  document.getElementById("rps").className = "inactive";
-  document.getElementById("rpslstab").className = "";
-  document.getElementById("rpsls").className = "inactive";
-}
-function rpsNav() {
-  document.getElementById("hometab").className = "";
-  document.getElementById("home").className = "inactive";
-  document.getElementById("rpstab").className = "active";
-  document.getElementById("rps").className = "active";
-  document.getElementById("rpslstab").className = "";
-  document.getElementById("rpsls").className = "inactive";
-}
-function rpslsNav() {
-  document.getElementById("hometab").className = "";
-  document.getElementById("home").className = "inactive";
-  document.getElementById("rpstab").className = "";
-  document.getElementById("rps").className = "inactive";
-  document.getElementById("rpslstab").className = "active";
-  document.getElementById("rpsls").className = "active";
-}
